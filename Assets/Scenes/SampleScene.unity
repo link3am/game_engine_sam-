@@ -565,8 +565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 963194227}
   editCam: {fileID: 709454871}
-  prefab1: {fileID: 0}
-  prefab2: {fileID: 0}
+  prefab1: {fileID: 8372322542167239813, guid: ac687b7f3381c7741966b6b94b5eb748, type: 3}
+  prefab2: {fileID: 4503306109800275494, guid: 692e24e9677b5bf488df2f5b217bbb29, type: 3}
   editMode: 0
 --- !u!114 &799506948
 MonoBehaviour:
