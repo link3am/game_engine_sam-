@@ -21,11 +21,11 @@ public class edit : MonoBehaviour
     // Start is called before the first frame update
     private void OnEnable()
     {
-        control.Enable();
+        control.editer.Enable();
     }
     private void OnDisable()
     {
-        control.Disable();
+        control.editer.Disable();
     }
     private void switchCamera()
     {
@@ -62,7 +62,12 @@ public class edit : MonoBehaviour
     }
     private void dropitme()
     {
-
+        if (editMode && instantiated)
+        {
+            item.GetComponent<Rigidbody>().useGravity = true;
+            item.GetComponent<Collider>().enabled = true;
+            instantiated = false;
+        }
     }
     void Awake()
     {
